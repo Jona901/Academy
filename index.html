@@ -1,37 +1,385 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <title>Phoenix Academy</title>
-    <link rel="icon" href="Images/Logo.png">
-	<meta property="og:type" content="website">
-        <meta property="og:site_name" content="Phoenix Academy">
-        <meta property="og:title" content="Start your journey to phoneix cyber academy!">
-        <meta property="og:description" content="">
-        <meta property="og:image" content="https://phoenixis.online/Images/Logo.png">
-        <script
-        src="https://kit.fontawesome.com/64d58efce2.js">
-      </script>
-</head>
-<body>
-    <div class="hero">
-		
-		<video autoplay loop muted plays-inline class="back-video">
-			<source src="Images/Video.mp4" type="video/mp4">
-		</video>
-        <div class="loader_bg">
-            <div class="loader"></div>
-        </div>
-<h2 class="err_header"><strong> JOIN OUR PHOENIX CYBER SPACE </strong> </h2>
-        <div class="title">
-            <small>Welcome to</small>
-            <h1>Phoenix</h1>
-<button class="glow-on-hover" type="button" onclick="window.location.href = 'Home/Home.html';">EXPLORE</button>
-        </div>
-            </div>
-        </div>
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title> Phoenix Academy</title>
 
-</body>
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+
+    <meta name="author" content="Phoenix Academy" />
+    <meta
+      name="description"
+      content="community that dare to speak the truth... Start your journey to phoneix cyber academy!"
+    />
+    <meta
+      name="keywords"
+      content="Phoenix Academy, hacking, HTML, CSS, JS, academy, bugbounty, cehv12, chfi, kerala, mavellikara, oscp"
+    />
+
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <!--
+    <link rel="canonical" href="https://rededge.vercel.app" />
+-->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/all.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <script src="./assets/js/repo-card.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Animation-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <div id="progress">
+      <span id="progress-value"></span>
+    </div> -->
+
+    <section>
+      <div class="container">
+        <div id="top" class="page-scroll"></div>
+        <!-- Navbar -->
+        <header>
+          <a href="#top" class="logo">Phoenix Academy</a>
+          <ul>
+            <li><a class="active page" href="#top" id="home-btn">Home</a></li>
+            <li><a href="#about" class="page" id="about-btn">About US</a></li>
+            <li><a href="#Courses" class="page" id="project-btn">Courses</a></li>
+            <li>
+              <a href="#contact" class="enabledisable page" id="contact-btn"
+                >Contact US</a
+              >
+            </li>
+          </ul>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+          <div class="column">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Welcome to Phoenix Academy<span class="wave">👋</span></h2>
+            <p data-aos="fade-right" data-aos-duration="1000">
+              Introducing a community that dare to speak the truth...
+              Start your journey to phoneix cyber academy!
+            </p>
+            <a href="mailto:tecsupport@phoenixis.online" data-aos="fade-right" data-aos-duration="1000">Mail US</a>
+          </div>
+          <div class="img">
+            <img draggable="false" src="./assets/me.png" alt="Hello There!!" data-aos="fade-up-right" data-aos-duration="1000"/>
+          </div>
+        </div>
+
+        <!-- 2nd Section -->
+        <div id="about" class="content page-scroll" style="justify-content: space-around">
+          <div class="img" data-aos="fade-right" data-aos-duration="1000">
+            <!-- https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/giphy.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=giphy.gif&ct=s -->
+            <img
+              src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=source.gif&ct=s"
+              alt="APS-OCTOCAT"
+            />
+          </div>
+          <div class="column-2">
+            <svg
+              xmlns="//www.w3.org/2000/svg"
+              version="1.1"
+              class="svg-filters"
+              style="display: none"
+            >
+              <defs>
+                <filter id="marker-shape">
+                  <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0 0.15"
+                    numOctaves="1"
+                    result="warp"
+                  />
+                  <feDisplacementMap
+                    xChannelSelector="R"
+                    yChannelSelector="G"
+                    scale="30"
+                    in="SourceGraphic"
+                    in2="warp"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <h2 style="font-weight: 550">
+              <span class="low-highlight-pink">What I do</span>
+            </h2>
+            <h3 style="font-size: 15px; color: #444444; font-weight: 1">
+              Our mission is to connect people around the world who share a common interest in Cyber
+              security, and to protect our Cyber space from hackers. Our platform will provide a space to the
+              nternet users, where they feel complete security and also can communicate with others.
+              We are committed to providing a safe and secure environment for members of our space, and we have implemented a set of rules and guidelines to ensure everyone’s safety. We also have a team of moderators who are available to help members with any queries or concerns they may have.
+              We Teach the Following Topics
+            </h3>
+            <div class="dev-icons">
+              <ul>
+		<li class="software-skill-inline html5">
+                  
+            
+      <i class="devicon-linux-plain"></i>
+          
+          
+                  <p>Linux</p>
+                </li>
+                <li class="software-skill-inline css3">
+                  
+            <i class="devicon-android-plain-wordmark"></i>
+          
+                  <p>Android</p>
+                </li>
+                <li class="software-skill-inline javascript">
+                  
+            <i class="devicon-androidstudio-plain"></i>
+          
+                  <p>Android Studio</p>
+                </li>
+		<li class="software-skill-inline linux">
+                  
+            <i class="devicon-bash-plain"></i>
+          
+                  <p>Bash</p>
+		</li>
+		<li class="software-skill-inline linux">
+                  
+            <i class="devicon-debian-plain"></i>
+          
+                  <p>Debian</p>
+                </li>
+                <li class="software-skill-inline python">
+                  
+            <i class="devicon-github-original"></i>
+          
+                  <p>Github</p>
+                </li>
+                <li class="software-skill-inline c">
+                  
+            <i class="devicon-mysql-plain"></i>
+          
+                  <p>MySql</p>
+                </li>
+                <li class="software-skill-inline cplusplus">
+                  
+            <i class="devicon-redhat-plain-wordmark"></i>
+          
+                  <p>Redhat</p>
+                </li>
+                <li class="software-skill-inline flask">
+                  
+              </ul>
+            </div>
+
+            <div>
+              <p style="color: #444444; font-size: 15px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="./assets/logo.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                We will Teach Cyber Threats Analysis course is an in-depth and hands-on 
+                program designed to empower students with the expertise to assess and respond to cyber threats effectively. 
+                Participants will explore the techniques, tools, and methodologies used by cyber adversaries, gaining invaluable insights 
+                into the art of threat intelligence and incident response
+                
+              </p>
+              <p style="color: #444444; font-size: 15px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="./assets/logo.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 18px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Optimizing Performance and Security and Server Sentinel: Defending Against Cyber Threats
+              </p>
+
+              <p style="color: #444444; font-size: 15px ">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="./assets/logo.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 18px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                The Web Application Penetration Testing course provides a structured and comprehensive approach to uncovering security weaknesses in web applications. 
+                Participants will learn cutting-edge tools, methodologies, and best practices to ensure web applications remain resilient against 
+                potential cyber threats. and we will cover up OWASP TOP 10 and Business logic vulnerabilities & CVE vulnerabilities extra
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 4th Section -->
+        <svg
+          xmlns="//www.w3.org/2000/svg"
+          version="1.1"
+          class="svg-filters"
+          style="display: none"
+        >
+          <defs>
+            <filter id="marker-shape">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0 0.15"
+                numOctaves="1"
+                result="warp"
+              />
+              <feDisplacementMap
+                xChannelSelector="R"
+                yChannelSelector="G"
+                scale="30"
+                in="SourceGraphic"
+                in2="warp"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <h2
+          id="Courses"
+          class="mob-h2 page-scroll"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-cyan">Courses</span>
+        </h2>
+        <div class="projects" >
+          <div class="repo-card" data-repo="Threats Analysis" data-dis="Threat Analysis is a vital discipline for modern cybersecurity. Threat Analysis is a meticulous process that identifies and assesses potential risks to safeguard your 
+          digital assets. Our comprehensive courses give you the tools to expertly evaluate threats, including cyberattacks and human errors.
+           By signing up for our program, you will gain the knowledge necessary to proactively protect your organization, making you an 
+           invaluable asset in the continued fight against evolving security threats. Gain a secure future by mastering Threat Analysis 
+           with us today."></div>
+          <div class="repo-card" data-repo="Server Configuration Essentials" data-dis="Gain knowledge of the fundamental principles of Server Configuration at our training center. Server setup is the cornerstone of a robust IT infrastructure, and our courses provide the essential knowledge and practical skills needed to excel in this crucial area.
+           Our comprehensive training provides you with the tools to configure servers with confidence for seamless performance and 
+           resilience, from server setup and optimization to top-tier security. Come along with us to unlock the key to effective
+            server management and enhance your IT expertise. "></div>
+          <div class="repo-card" data-repo="Web application penetration testing" data-dis="Discover the world of web app penetration testing at our training centre. Understanding how to assess and fortify web 
+          applications against cyber threats is crucial in this era of online security. Our courses teach you the art and science of penetration testing, providing you with the knowledge to identify vulnerabilities and weaknesses in web applications.
+           Through hands-on training, you will gain the ability to think like a hacker, uncover security flaws, and implement robust defenses. Joining us will enable you to acquire the skills necessary to safeguard critical digital assets, making you a valuable asset
+           in cybersecurity. Enhance your expertise in web application penetration testing with our comprehensive training program today. "></div>
+          <div class="repo-card" data-repo="Android Pentesting" data-dis=" Get involved in Android Pentesting at our training center. Android penetration testing, or Android penetration testing, is a cybersecurity discipline that focuses on identifying and addressing vulnerabilities in Android applications and devices. Our comprehensive courses provide hands-on experience in assessing and securing Android systems. Whether you're an aspiring ethical hacker or a cybersecurity professional looking to expand your expertise, our program will equip you with the skills to effectively assess and fortify Android security. Join us in learning Android Pentesting and making a difference in a safer mobile computing environment."></div>
+          <div class="repo-card" data-repo="API Pentesting" data-dis=" Gain access to the power of API security testing at our training center. API Pentesting, abbreviation for Application Programming Interface Pentesting, is a vital cybersecurity discipline that focuses on identifying vulnerabilities and weaknesses within API parameters. Our specific courses take a deep dive into this field, empowering you with the knowledge and tools to effectively assess the security of APIs. Whether you are a budding ethics hacker or a cybersecurity professional looking to improve your skills, our training program will allow you to discover and address potential risks in API-driven systems. 
+          Gain mastery of API Pentesting and become a guardian of digital data integrity in today's interconnected world by joining us."></div>
+        
+          <!--<div class="repo-card" data-repo="RedEdge967/MK-Wiki"></div>
+          <div
+            class="repo-card"
+            data-repo="RedEdge967/Doctor-Strange"
+          ></div>
+          <div
+            class="repo-card"
+            data-repo="RedEdge967/Spider-Man"
+          ></div>
+          <div
+            class="repo-card"
+            data-repo="RedEdge967/Keyboard-Hero"
+          ></div>
+          <div class="repo-card" data-repo="RedEdge967/candy-crush"></div>-->
+        </div>
+
+        <h2  id="contact"
+          class="mob-connect enabledisable page-scroll"
+          style="font-size: 40px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-hazeskin">Connect with us</span>
+        </h2>
+        <ul class="socialsites ">
+          <li>
+            <a href="https://wa.me/message/BL627KCBZUW5H1"><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li>
+	  <li>
+          <li>
+            <a href="https://discord.gg/umuRZmv7jW"><i class="fab fa-discord"></i></a>
+          </li>
+          <li>
+            <a href="tel:+918891713204"><i class="fa fa-phone"></i></a>
+          </li>
+        </ul>
+
+        <!-- Footer -->
+      </div>
+    </section>
+    <div class="button-top-div" id="myDIV">
+      <a id="button-top" href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Page Scroll Percentage -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Page Scroll Up On Click -->
+    <script>
+      //scroller fixed
+      var scrolBtn = document.querySelector("#myDIV");
+      window.addEventListener("scroll", function () {
+        let offset;
+        offset = window.pageYOffset;
+        if (offset > 300) {
+          scrolBtn.style.display = "block";
+        }
+        if (offset < 300) {
+          scrolBtn.style.display = "none";
+        }
+      });
+
+      //remove that #s in the link
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
